@@ -1,0 +1,207 @@
+/************ PARAMETRES GENERAUX *************/
+@font-face {
+    font-family: paragraphe;
+    src: url(./font/Armata-Regular.ttf);
+}
+
+@font-face {
+    font-family: titre;
+    src: url(./font/Armata-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: paragraphe;   
+    transition: ease-in-out 0.5s;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 10px auto;
+    font-family: titre;
+}
+
+p,
+span,
+a {
+    font-family: paragraphe;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+  
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    margin: 20px auto 0 auto;
+    max-width: 90%;
+    padding: 20px;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/************ NAVBAR *************/
+nav {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Afficher les éléments de la liste horizontalement */
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+}
+
+nav ul li a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    padding: 5px 10px; /* Espacement intérieur des liens */
+    border-radius: 5px; /* Bordure arrondie des liens */
+    transition: background-color 0.3s; /* Transition de couleur au survol */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Couleur de fond au survol des liens */
+}
+
+/************ TABLEAU LIST + VIEW DEVIS *************/
+table {
+    width: 90%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Style pour les en-têtes de colonne */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style pour les cellules */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style pour les liens d'actions */
+td a {
+    color: #007bff;
+}
+
+/* Style pour les liens d'actions au survol */
+td a:hover {
+    text-decoration: underline;
+}
+
+/************ FORMULAIRE AJOUT & EDIT *************/
+
+/* Style pour les étiquettes des champs de formulaire */
+.container form {
+    width: 80%;
+}
+
+.items {
+    min-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour les champs de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton de soumission du formulaire */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour le bouton de soumission du formulaire au survol */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/************ VIEW DETAILLEE CLIENT *************/
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.profile-info strong {
+    font-weight: bold;
+}
